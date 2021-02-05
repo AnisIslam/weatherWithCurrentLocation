@@ -36,7 +36,7 @@ function handle_fetch(presentLocation){
 
 
 //This work for setting current location
-function location_hadle(){
+function location_handle(){
    fetch('https://freegeoip.app/json/')
     .then(response=> response.json())
     .then(data=>{
@@ -62,6 +62,6 @@ function location_hadle(){
     })
  
 }
-location_hadle();
+location_handle();
     
 
