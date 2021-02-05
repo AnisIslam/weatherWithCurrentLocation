@@ -1,3 +1,3 @@
-# weather-and-current-location
-# live: 
 # weatherWithCurrentLocation
+# live: https://anisislam.github.io/weatherWithCurrentLocation/index.html
+
