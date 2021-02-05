@@ -15,7 +15,7 @@ function weather() {
 
 // Set API collecting temperature by search city
 function handle_fetch(presentLocation){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+presentLocation+'&units=metric&appid=61d2ad6f0b7758a658fa5e7db897fd42 ')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+presentLocation+'&units=metric&appid=ee9a04cde741262b82d011f502ed7543 ')
         .then(response => response.json())
         .then(data=>{
             const cityName = data.name
@@ -27,7 +27,7 @@ function handle_fetch(presentLocation){
             const link ="http://openweathermap.org/img/w/"+icon+".png"
             
             document.getElementById("myImg").src = link
-            document.getElementById('cityName').innerText = cityName;
+            document.getElementById('cityName').innerText = cityName || 'Unknown Location';
             document.getElementById('temp').innerText = temp;
             document.getElementById('description').innerText = description;
 
